@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <script
+      src="https://kit.fontawesome.com/02f0423708.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Ester's Bakery</title>
+  </head>
+  <body>
+    <header
+      class="flex flex-row justify-around items-center text-white fixed w-full top-0 left-0 z-10">
+      <!-- class="flex flex-row justify-around items-center bg-pink-500 text-white"> -->
+      <h3 class="font-bold text-2xl">Prisca's</h3>
+      <nav>
+        <ul class="flex p-2 justify-center items-center text-base">
+          <li class="m-2"><a href="#">Home</a></li>
+          <li class="m-2"><a href="./menu.html">Menu</a></li>
+          <li class="m-2"><a href="">About Us</a></li>
+          <li class="m-2"><a href="">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="flex items-center">
+        <a href="./menu.html"
+          ><button class="rounded-md p-2 text-base m-2 btn1">
+            Order Now
+          </button></a
+        >
+        <!-- <i class="bx bxs-shopping-bag text-white text-3xl"></i> -->
+        <i class="bx bxs-cart text-white text-3xl"></i>
+      </div>
+    </header>
+    <main>
+      <!-- <section
+        class="section1 flex flex-col justify-center items-center w-full">
+        <h1 class="text-7xl text-pink-800 font-bold">
+          Prisca's Bakery & Confectionary
+        </h1>
+        <p class="font-semibold text-2xl">
+          Savor the sweet symphony of our freshly homebaked baked goods.
+        </p>
+        <div>
+          <button class="btn1 p-2 text-xl">Order Now</button>
+          <button class="btn btn-secondary text-xl">View Menu</button>
+        </div>
+      </section> -->
+      <section>
+        <div
+          class="hero min-h-screen bg-cover bg-center"
+          style="
+            background-image: url(./images/heather-barnes-WbZesfqwR-A-unsplash.jpg);
+          ">
+          <!-- <div class="hero min-h-screen " style="background-image: url(./images/heather-barnes-WbZesfqwR-A-unsplash.jpg);"> -->
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md bakery">
+              <h1 class="text-7xl font-bold text-white">
+                Prisca's Bakery & Confectionary
+              </h1>
+              <!-- <h1 class="mb-5 text-7xl font-bold">Prisca's Bakery & Confectionary</h1> -->
+              <p class="mb-5">
+                Savor the sweet aroma of our freshly homebaked products.
+              </p>
+              <button
+                class="btn1 rounded-md p-2 text-base hover:bg-[transparent] font-semibold outline outline-current outline-1">
+                Order Now
+              </button>
+              <a href="./menu.html"
+                ><button
+                  class="outline outline-current outline-1 p-2 hover:bg-[#c49991] font-semibold rounded-md text-base">
+                  View Menu
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="h-screen card2 lg:flex justify-center items-center">
+        <div class="lg:flex flex-col m-6 justify-center items-center">
+          <h3 class="text-center p-4 font-bold text-2xl">
+            Main Services we offer
+          </h3>
+          <hr class="w-96 mx-auto m-4" />
+          <h4 class="text-center">
+            Our services are best in Bukoto, Come and taste the delicious
+            homemade bakery products
+          </h4>
+          <div class="lg:flex lg:flex-row">
+            <div
+              class="w-72 bg-base-100 card1 flex flex-col justify-center items-center m-4">
+              <i
+                class="fa-solid fa-kitchen-set text-5xl bg-orange-400 text-white p-8 hover:bg-blue-950"></i>
+              <h4 class="m-4 font-bold">TOP BAKERS</h4>
+              <p class="text-center">
+                We have one of the best bakers in our community, with experience
+                of over one year.
+              </p>
+            </div>
+
+            <div
+              class="w-72 bg-base-100 card1 flex flex-col justify-center items-center m-4">
+              <i
+                class="fa-solid fa-bread-slice text-5xl bg-orange-400 text-white p-8 hover:bg-blue-950"></i>
+              <h4 class="m-4 font-bold">FRESH INGREDIENTS</h4>
+              <p class="text-center">
+                The Ingredients we use bring vibrancy and nutrition to every
+                snack.
+              </p>
+            </div>
+            <div
+              class="w-72 bg-base-100 card1 flex flex-col justify-center items-center m-4">
+              <i
+                class="fa-solid fa-cookie text-5xl bg-orange-400 text-white p-8 hover:bg-blue-950"></i>
+              <h4 class="m-4 font-bold">ATTRACTIVE FLAVORS</h4>
+              <p class="text-center">
+                The delicious flavors in our products bring an esscence of our
+                goods to life. Enticing you with the taste and aroma they
+                create.
+              </p>
+            </div>
+            <!-- <div
+              class="w-72 bg-base-100 card1 flex flex-col justify-center items-center m-4">
+              <i
+                class="fa-solid fa-utensils text-5xl bg-orange-400 text-white p-8 hover:bg-blue-950"></i>
+              <h4 class="m-4 font-bold">PROFFESSIONAL</h4>
+              <p class="text-center">
+                In every thing we do, we apply consistency, demostrate integrity
+                and a commitment to excellence.
+              </p>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="section6">
+        <div class="lg:flex justify-center items-center w-full">
+          <div
+            class="lg:w-1/2 w-full container1 bg-gray-200 lg:flex items-center translate-x-6 normal 100s linear infinite">
+            <img src="./images/birthday-cakes.jpg" class="w-full image" />
+            <img src="./images/cinammon-rolls.jpg" class="w-full image" />
+          </div>
+          <div class="w-1/2 p-6 m-4 flex flex-col">
+            <h1 class="text-2xl font-bold p-4">Welcome to our Bakery</h1>
+            <p class="p-4">
+              Welcome to Prisca's Bakery & Confectionary, a modern Ugandan-style
+              bakery and confectionary that celebrates the flavors and
+              traditions of the ugandan culture through food. We offer a variety
+              of pastries, breads, snacks and birthday cakes. We strive to
+              support local vendors whenever possible by purchasing their
+              products as well.
+            </p>
+            <p class="p-4">
+              Excellent hospitality is what we strive for: from our ordering
+              process, to the production of our baked goods, and their delivery,
+              we are always focused on making our clients feel comfortable and
+              well taken care of.
+            </p>
+            <p class="p-4">
+              Born during a time of pandemic, Prisca's Bakery & Confectionary
+              celebrates the experiences that make us human like sharing
+              delicious snacks with our friends and family. We invite you to
+              visit the shop where you can choose from a variety of fresh and
+              handmade menu options.
+            </p>
+          </div>
+          <!-- <img src="./images/bakery2.jpg" alt="" class="w-2/4 p-4" /> -->
+        </div>
+      </section>
+      <section class="section2">
+        <div class="lg:flex items-center justify-around p-4 flex-row">
+          <h1 class="text-2xl font-bold">Our Bakery Products</h1>
+          <a href="./menu.html"
+            ><button class="btn btn-dark font-bold">View More</button></a
+          >
+        </div>
+
+        <div class="w-full">
+          <div class="lg:flex justify-center">
+            <!-- <div class="flex justify-center opacity-0 transition-opacity duration-300" id="div1"> -->
+            <div
+              class="outline outline-gray-50 lg:w-72 m-1 slide1 flex flex-col"
+              id="slide1">
+              <img
+                src="./images/cinammon-rolls.jpg"
+                alt=""
+                class="mx-auto lg:w-64 m-2 rounded-md h-60 w-full" />
+              <h3 class="text-xl font-bold text-center mt-8">Cinammon Rolls</h3>
+              <hr class="m-2 w-1/2 mx-auto" />
+              <p class="text-center">Price UGX 12000</p>
+              <button
+                class="p-2 w-64 mt-4 text-white mx-auto btn2 hover:bg-none hover:outline-2 font-semibold">
+                Add to Cart
+              </button>
+            </div>
+            <div
+              class="w-72 m-1 outline outline-gray-50 flex flex-col"
+              id="slide2">
+              <img
+                src="./images/Basic-Muffin-Recipe.jpg"
+                alt=""
+                class="mx-auto w-64 m-2 rounded-md h-60" />
+              <h3 class="text-xl font-bold text-center mt-8">Muffins</h3>
+              <hr class="m-2 w-1/2 mx-auto" />
+              <p class="text-center">Price UGX 12000</p>
+              <button
+                class="p-2 w-64 mt-4 text-white mx-auto btn2 font-semibold">
+                Add to Cart
+              </button>
+            </div>
+            <div
+              class="w-72 m-1 outline outline-gray-50 flex flex-col"
+              id="slide3">
+              <img
+                src="./images/crossiants1.jpg"
+                alt=""
+                class="mx-auto w-64 m-2 rounded-md h-60" />
+              <h3 class="text-xl font-bold text-center mt-8">Crossiants</h3>
+              <hr class="m-2 w-1/2 mx-auto" />
+              <p class="text-center">Price UGX 12000</p>
+              <button
+                class="p-2 w-64 mt-4 text-white mx-auto btn2 m-2 font-semibold">
+                Add to Cart
+              </button>
+            </div>
+
+            <div
+              class="w-72 m-1 outline outline-gray-50 flex flex-col"
+              id="slide4">
+              <img
+                src="./images/birthday-cakes.jpg"
+                alt=""
+                class="mx-auto w-64 m-2 rounded-md h-60" />
+              <h3 class="text-xl font-bold text-center mt-8">Birthday Cake</h3>
+              <hr class="m-2 w-1/2 mx-auto" />
+              <p class="text-center">Price UGX 150,000</p>
+              <button
+                class="p-2 w-64 mt-4 text-white mx-auto btn2 m-2 font-semibold">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- <div class="lg:flex m-4 justify-center">
+            <div class="w-72 m-1 outline outline-gray-50 flex flex-col">
+              <img
+                src="./images/samosas.jpg"
+                alt=""
+                class="mx-auto w-64 m-2 rounded-md h-60" />
+              <h3 class="text-xl font-bold text-center mt-8">Samosas</h3>
+              <hr class="m-2 w-1/2 mx-auto" />
+              <p class="text-center">Price UGX 12000</p>
+              <button
+                class="p-2 w-64 mt-4 text-white mx-auto btn2 m-2 font-semibold">
+                Add to Cart
+              </button>
+            </div>
+            <div class="w-72 m-1 outline outline-gray-50 flex flex-col">
+              <img
+                src="./images/Rock-buns.jpg"
+                alt=""
+                class="mx-auto w-64 m-2 rounded-md h-60" />
+              <h3 class="text-xl font-bold text-center mt-8">Rock Buns</h3>
+              <hr class="m-2 w-1/2 mx-auto" />
+              <p class="text-center">Price UGX 12000</p>
+              <button
+                class="p-2 w-64 mt-4 text-white mx-auto btn2 m-2 font-semibold">
+                Add to Cart
+              </button>
+            </div>
+            <div class="w-72 m-1 outline outline-gray-50 flex flex-col">
+              <img
+                src="./images/daddies.jpg"
+                alt=""
+                class="mx-auto w-64 m-2 rounded-md h-60" />
+              <h3 class="text-xl font-bold text-center mt-8">Daddies</h3>
+              <hr class="m-2 w-1/2 mx-auto" />
+              <p class="text-center">Price UGX 3000</p>
+              <button
+                class="p-2 w-64 mt-4 text-white mx-auto btn2 m-2 font-semibold">
+                Add to Cart
+              </button>
+            </div>
+            <div class="w-72 m-1 outline outline-gray-50 flex flex-col">
+              <img
+                src="./images/milk-bread.webp"
+                alt=""
+                class="mx-auto w-64 m-2 rounded-md h-60" />
+              <h3 class="text-xl font-bold text-center mt-8">Milk bread</h3>
+              <hr class="m-2 w-1/2 mx-auto" />
+              <p class="text-center">Price UGX 6000</p>
+              <button
+                class="p-2 w-64 mt-4 text-white mx-auto btn2 m-2 font-semibold">
+                Add to Cart
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <section>
+        <div class="section3 lg:flex w-full h-80 mt-14">
+          <div class="lg:flex lg:flex-row justify-center">
+            <!-- <div class="w-1/3 border-2 border-solid border-black m-4"> -->
+            <img
+              src="./images/prica-image.jpg"
+              alt="Prisca's image"
+              class="w-96 h-96 ml-14 rounded-xl" />
+            <!-- </div> -->
+            <div class="w-1/2 lg:flex flex-col p-8 ml-24">
+              <h3 class="card-title p-4 text-xl font-bold">About the Baker</h3>
+              <p class="p-4">
+                Hi! my name is Asinde Ester Prisca, I'm the founder and chef at
+                Prisca's Bakery & Confectionary, After months of learning,
+                tasting and experimenting, I'm excited to share with you the
+                result of my inspirations come to life.
+              </p>
+              <button
+                class="outline outline-current outline-1 p-2 m-4 hover:bg-[#e7a092] w-64">
+                Learn more about Prisca
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lg:flex flex-col justify-center h-screen">
+        <div class="section4 mt-24 flex">
+          <div
+            class="flex flex-col w-1/3 justify-center p-4 m-8 ml-16 items-center text-white z-10">
+            <h2 class="m-2 p-4 font-bold text-xl">Opening Hours</h2>
+            <div class="flex w-80 flex-col ml-4">
+              <div class="flex justify-between m-2">
+                <p>Working Days</p>
+                <p>08AM - 05PM</p>
+              </div>
+
+              <hr class="w-80 mx-auto m-2" />
+            </div>
+
+            <div class="flex w-80 flex-col ml-4">
+              <div class="flex justify-between m-2">
+                <p>Saturday</p>
+                <p>10AM - 05PM</p>
+              </div>
+              <hr class="w-80 mx-auto m-2" />
+            </div>
+
+            <div class="flex w-80 flex-col ml-4">
+              <div class="flex justify-between m-2">
+                <p>Sunday</p>
+                <p>12AM - 05PM</p>
+              </div>
+              <hr class="w-80 mx-auto m-2" />
+            </div>
+          </div>
+          <div class="flex flex-col m-8 w-1/2">
+            <h1 class="font-bold text-2xl m-2 text-white">Get in Touch</h1>
+            <p class="m-2 text-[#1A2421] font-semibold text-white">
+              Please feel free to contact us according to the opening times
+              specified, For any inquires or specific orders, call us on the
+              phone number below.
+            </p>
+            <!-- <div> -->
+            <form action="" class="flex flex-col">
+              <!-- <label for="">Name</label> -->
+              <input
+                type="text"
+                placeholder="Name"
+                class="text-white m-2 p-4" />
+              <!-- <label for="">Email</label> -->
+              <input
+                type="text"
+                placeholder="Email"
+                class="m-2 p-4 text-white" />
+              <!-- <label for="">Message</label> -->
+              <textarea
+                name=""
+                id=""
+                placeholder="Message"
+                class="m-2 p-4 text-white"
+                rows="5"></textarea>
+              <button
+                class="p-2 bg-[#7A7A7A] hover:text-white m-2 font-semibold rounded-md border-none"
+                id="send">
+                SEND
+              </button>
+            </form>
+            <!-- </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-base-200">
+      <!-- <footer class="footer p-10 bg-base-200 text-base-content"> -->
+      <div class="p-10 text-base-content lg:flex justify-around">
+        <aside>
+          <h1 class="font-bold text-2xl">Prisca's</h1>
+          <p class="w-64 mt-4">
+            Discover the friendly atmosphere of Prisca's Bakery & Confectionary
+            in Bukoto. Make orders on a place where simplicity and diversity
+            come together for an authentic experience.
+          </p>
+          <p class="mt-4 flex items-center">
+            <input type="radio" name="radio-1" class="radio mr-2" checked />
+            <span>Know More About us </span>
+          </p>
+        </aside>
+        <div class="flex flex-col">
+          <h6 class="text-xl font-semibold">Quick Links</h6>
+          <ul>
+            <li class="mt-2">About Us</li>
+            <li class="mt-1">Contact Us</li>
+            <li class="mt-1">Our Menu</li>
+            <li class="mt-1">Catering</li>
+          </ul>
+        </div>
+        <div class="flex flex-col links">
+          <h6 class="text-xl font-semibold">Contact</h6>
+          <div class="mt-1 flex flex-row items-center">
+            <i
+              class="bx bxs-location-plus m-2 text-3xl text-white bg-[#E6A79B] flex items-center justify-center"></i>
+            <p>
+              Bukoto UCB Zone Moyo close <br />
+              Kampala Uganda
+            </p>
+          </div>
+          <div class="mt-1 flex flex-row items-center">
+            <i
+              class="bx bx-envelope m-2 text-3xl text-white bg-[#E6A79B] flex items-center justify-center"></i>
+            <p>ester@gmail.com</p>
+          </div>
+          <div class="mt-1 flex flex-row items-center">
+            <i
+              class="bx bxs-phone m-2 text-3xl text-white bg-[#E6A79B] flex items-center justify-center"></i>
+            <p>+256-762-266-803</p>
+          </div>
+        </div>
+        <div class="flex flex-col fotters">
+          <h6 class="text-xl font-semibold">Social Links</h6>
+          <div class="flex mt-2">
+            <i
+              class="bx bxl-twitter text-3xl text-white bg-[#E6A79B] m-2 mx-auto flex items-center justify-center"></i>
+            <i
+              class="bx bxl-facebook text-3xl text-white bg-[#E6A79B] m-2 flex items-center justify-center"></i>
+            <i
+              class="bx bxl-youtube text-3xl text-white bg-[#E6A79B] m-2 flex items-center justify-center"></i>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center">
+        <hr class="w-4/5 m-2 mx-auto bg-[#000]" />
+        <p class="flex items-center">
+          Made with <i class="bx bxs-heart text-center text-xl"></i> by Namale
+          Fatuma
+        </p>
+      </div>
+    </footer>
+    <script>
+      const myDiv = document.getElementById("div1");
+
+      // function to check if the elements are in viewport
+      function isInViewPort(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+      // function to handle scroll event
+      function handleSrcoll() {
+        if (isInViewPort(myDiv)) {
+          myDiv.classList.remove("opacity-0");
+        }
+      }
+      // add scroll event listener
+      window.addEventListener("scroll", handleSrcoll);
+
+      window.addEventListener("scroll", () => {
+        var header = document.querySelector("header");
+        var scrollPosition = window.scrollY;
+
+        if (scrollPosition > 50) {
+          header.style.backgroundColor = "#E6A79B";
+          // header.style.backgroundColor = "#EC4899";
+          // header.style.color = "#000";
+        } else {
+          header.style.backgroundColor = "transparent";
+          header.style.color = "#fff";
+        }
+      });
+
+      var send = document.getElementById("send");
+      const handleSubmit = () => {
+        alert("Thank you, your response has been received successfully");
+      };
+      send.addEventListener("click", handleSubmit);
+    </script>
+  </body>
+</html>

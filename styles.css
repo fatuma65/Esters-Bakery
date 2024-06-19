@@ -1,0 +1,120 @@
+.section1 {
+  background-image: url(./images/heather-barnes-WbZesfqwR-A-unsplash.jpg);
+  /* background-image: url(./images/bakery1.jpg); */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  opacity: 0.9;
+}
+header {
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    z-index: 10;
+    /* background-color: #fff; */
+}
+
+
+.card1 i {
+    border-radius: 50%;
+}
+.card2 i {
+    background-color: #E6A79B;
+    /* background-color: #eb81b6; */
+}
+.btn1 {
+  background-color: #E6A79B;
+}
+.fotters i {
+    width: 48px;
+    height: 48px;
+    padding: 4px;
+    border-radius: 50%;
+}
+.fotters i:hover {
+    background-color: #c49991;
+}
+.links i {
+    width: 48px;
+    height: 48px;
+    padding: 2px;
+    border-radius: 50%;
+}
+.links i:hover {
+    background-color: #c49991;
+}
+.section3 {
+    background-color: #E6A79B;
+    /* background-color: #e7a092; */
+}
+.btn2 {
+  /* background-color: #e4ac8c; */
+  background-color: #E6A79B;
+}
+.btn2:hover {
+  background-color: #F7F7F7;
+  color: #000;
+}
+/* .section3 {
+  background-image: url(./images/section3-bacground.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+} */
+
+.section4 {
+  /* background-color: #FFFFFF; */
+  /* background-color: #f6f2f2; */
+  background-image: url(./images/section3-bacground.jpg);
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+  
+}
+.section6 {
+    background-color: #F7F7F7;
+}
+input, textarea {
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    transition: 1s;
+    border-top: 0;
+    border-left: 0;
+    border-right:0 ;
+    outline: none;
+    
+}
+/* input:hover {
+    border: 1px solid gray;
+}
+textarea:hover {
+    border: 1px solid gray;
+} */
+
+@keyframes slide {
+  0% {
+    transform: translateX(1.5rem);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.container1 {
+    height: 500px;
+  /* width: 100%; Adjust container width as needed */
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  /* width: calc(100% - 2rem); Adjust image width accounting for margins */
+  /* height: auto; */
+  animation: slide 10s linear infinite;
+  transform: translateX(-50%); 
+}
+
+@media screen and (max-width:950px) and (min-width:130px) {
+  .container1 {
+    display: none;
+  }
+  
+}
