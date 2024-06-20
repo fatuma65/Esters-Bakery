@@ -60,6 +60,12 @@ header {
   opacity: 0.8;
 } */
 
+.contact-section {
+  background-image: url(./images/contact.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 .section4 {
   /* background-color: #FFFFFF; */
   /* background-color: #f6f2f2; */
