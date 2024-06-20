@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <script
+      src="https://kit.fontawesome.com/02f0423708.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header
+      class="flex flex-row justify-around items-center bg-[#E6A79B] text-white fixed w-full top-0 left-0 z-10">
+      <!-- class="flex flex-row justify-around items-center bg-pink-500 text-white"> -->
+      <h3 class="font-bold text-2xl">Prisca's</h3>
+      <nav>
+        <ul class="flex p-2 justify-center items-center text-base">
+          <li class="m-2"><a href="./index.html">Home</a></li>
+          <li class="m-2"><a href="./menu.html">Menu</a></li>
+          <li class="m-2"><a href="">About Us</a></li>
+          <li class="m-2"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="flex items-center">
+        <a href="./menu.html"
+          ><button class="rounded-md p-2 text-base m-2 btn1">
+            Order Now
+          </button></a
+        >
+        <!-- <i class="bx bxs-shopping-bag text-white text-3xl"></i> -->
+        <i class="bx bxs-cart text-white text-3xl"></i>
+      </div>
+    </header>
+    <main>
+      <section class="">
+        <div
+          class="contact-section mt-14 w-full h-96 flex justify-center items-center relative">
+          <div class="hero-overlay bg-opacity-70">
+            <div class="hero-content text-center text-neutral-content">
+              <!-- <div class=""> -->
+              <div class="max-md-auto">
+                <h1 class="text-7xl ml-48 text-white font-bold text-black">
+                  Contact Us
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-center shadow-2xl lg:w-4/6 w-3/4 rounded-xl lg:mt-80 mt-96 absolute bg-[#fff]">
+            <!-- <div class="">
+                
+            </div> -->
+            <form action="" class="flex flex-col p-6">
+              <label for="" class="lg:text-lg text-2xl p-2">Name</label>
+              <input
+                type="text"
+                class="border border-black border-solid lg:p-2 p-4 rounded-md" />
+              <label for="" class="lg:text-lg text-2xl p-2">Email</label>
+              <input
+                type="text"
+                class="border border-black border-solid lg:p-2 p-4 rounded-md" />
+              <label for="" class="lg:text-lg text-2xl p-2">Message</label>
+              <textarea
+                name=""
+                id=""
+                class="border border-black border-solid lg:p-4 p-8 rounded-md"
+                rows="5"></textarea>
+              <button
+                class="btn btn-primary mt-4 lg:text-lg text-2xl text-white bg-[#E6A79B] border-none hover:bg-[#c49991]" id="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      var submit = document.getElementById('submit');
+      const handleSend = () => {
+        alert('Thank you, your response has been recieved successfully')
+      };
+      submit.addEventListener('click', handleSend)
+    </script>
+  </body>
+</html>
