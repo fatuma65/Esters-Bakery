@@ -8,11 +8,43 @@
 }
 header {
     transition: background-color 0.3s ease; /* Smooth transition for background color change */
-    z-index: 10;
+    z-index: 0;
+    height: 60px;
+
     /* background-color: #fff; */
 }
+header img {
+  width: 60px;
+  height: 40px;
+  margin-top: 5px;
+  max-width: 100%;
+  height: auto;
+}
+.main-h1 {
+  padding: 50px;
+  margin-left: 140px;
+}
+footer img {
+  width: 80px;
+  height: 40px;
+  margin-top: 5px;
+  max-width: 100%;
+  height: auto;
+}
+/* .carousel-item {
+  flex: 0 0 100%; /* Adjust item width based on the number of items you have */
 
-
+.quantity-input::-webkit-outer-spin-button, .quantity-input::-webkit-inner-spin-button {
+  display: none;
+  margin: 0;
+}
+.opening {
+  z-index: -1;
+  position: relative;
+}
+.card1 h4{
+  /* font-size: 22px; */
+}
 .card1 i {
     border-radius: 50%;
 }
@@ -69,11 +101,25 @@ header {
 .section4 {
   /* background-color: #FFFFFF; */
   /* background-color: #f6f2f2; */
-  background-image: url(./images/section3-bacground.jpg);
+  background-image: url(./images/loop-video.mp4); 
+  /* background-image: url(./images/section3-bacground.jpg);  */
   background-size: cover;
   background-position: center;
+  /* padding-top: 100px; */
+  z-index: 0;
+  
   /* height: 100vh; */
   
+}
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire background */
+  z-index: -1; /* Place the video behind other content */
+  /* opacity: 0.8; */
 }
 .section6 {
     background-color: #F7F7F7;
@@ -94,33 +140,95 @@ input, textarea {
 textarea:hover {
     border: 1px solid gray;
 } */
-
-@keyframes slide {
-  0% {
-    transform: translateX(1.5rem);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.bx-menu {
+  display: none;
 }
+.main-menu {
 
-.container1 {
-    height: 500px;
-  /* width: 100%; Adjust container width as needed */
-  position: relative;
+}
+@media screen and (min-width:250px) and (max-width:630px) {
+ header {
+  /* display: none; */
+  height: 100px;
+  justify-content: space-between;
+  padding: 20px;
+
+ }
+ #main-div {
+  display: none;
+ }
+ /* .main-menu { */
+ nav ul {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background: #333;
+  width: 100%;
   overflow: hidden;
+  /* font-size: 28px; */
+  transition: max-height 0.5s;
 }
-
-.image {
-  /* width: calc(100% - 2rem); Adjust image width accounting for margins */
-  /* height: auto; */
-  animation: slide 10s linear infinite;
-  transform: translateX(-50%); 
+.opening h2 {
+  text-align: center;
 }
+.baker-img {
+  margin-top: -50px;
+  border-radius: 16px;
+}
+.get {
+  text-align: center;
+}
+.main-menu {
+  /* display: none; */
+}
+.slide1 p {
+  font-size: 22px;
+}
+.slide1 img {
+  border-radius: 16px;
+}
+.contact {
+  text-align: center;
+}
+.footer-img {
+  margin: auto;
+  /* height: 60px; */
+  width: 120px;
+}
+.slide1 button {
+  padding: 20px;
+  font-size: 22px;
+  border-radius: 16px;
 
-@media screen and (max-width:950px) and (min-width:130px) {
-  .container1 {
-    display: none;
-  }
-  
+}
+ .bx-menu {
+  display: block;
+ }
+ header img {
+  width: 90px;
+  height: 70px;
+  margin-top: 15px;
+ }
+ nav {
+  display: none;
+ }
+ .card2 {
+  height: 100vh;
+ }
+ .section6 {
+  height: 100vh;
+  margin-top: 350px;
+ }
+ .section6 p {
+  font-size: 26px;
+ }
+ .section6 h1 {
+  text-align: center;
+ }
+ .section2 {
+  margin-top: 440px;
+ }
+ .section3 {
+  height: 100vh;
+ }
 }
