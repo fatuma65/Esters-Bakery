@@ -19,7 +19,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./favicon-32x32.png" />
+      href="./favicon-32x32.ico" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="./styles.css" />
@@ -27,14 +27,14 @@
   </head>
   <body>
     <header
-      class="flex flex-row justify-around items-center text-white fixed bg-[#E6A79B] w-full top-0 left-0 z-10">
+      class="flex flex-row justify-around items-center text-white fixed bg-[#F2EDE8] w-full top-0 left-0 z-10">
       <!-- class="flex flex-row justify-around items-center  text-white"> -->
-      <h3 class="font-bold text-2xl">Prisca's</h3>
+      <img src="./images/Prisca_s_Bakery__7_-removebg-preview.png" alt="Prisc's bakery logo" class="">
       <nav>
-        <ul class="lg:flex p-2 justify-center items-center text-base">
+        <ul class="lg:flex p-2 justify-center items-center text-base text-black">
           <a href="./index.html"><li class="m-2">Home</li></a>
           <a href="./menu.html"><li class="m-2">Menu</li></a>
-          <a href=""><li class="m-2">About Us</li></a>
+          <a href="./about.html"><li class="m-2">About Us</li></a>
           <a href="./contact.html"><li class="m-2">Contact Us</li></a>
         </ul>
       </nav>
@@ -45,13 +45,12 @@
           </button></a
         >
         <!-- <i class="bx bxs-shopping-bag text-white text-3xl"></i> -->
-        <i class="bx bxs-cart text-white text-3xl"></i>
+        <i class="bx bxs-cart text-black text-3xl"></i>
       </div>
     </header>
     <main>
       <section class="flex items-center mt-14">
-        <div
-          class="lg:flex flex-row w-full justify-center items-center">
+        <div class="lg:flex flex-row w-full justify-center items-center">
           <!-- <div class="flex justify-center opacity-0 transition-opacity duration-300" id="div1"> -->
           <!-- <div
               class="outline outline-gray-50 slide1 flex"
@@ -64,12 +63,20 @@
           <div class="w-1/2">
             <h3 class="text-2xl font-bold mt-8 w-full">Cinammon Roll</h3>
             <p class="mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
-              harum praesentium accusamus beatae facilis ad deleniti veritatis
-    
+              Each roll is generously coated with a delicious swirl of cinamon filling and topped with a rich topping.
             </p>
             <p class="mt-4 text-red">Price UGX 12000</p>
-            <input type="number" class="bg-[bg-gray-200] outline outline-gray-40 text-1xl h-12 text-center w-24 mt-4">
+            <div
+              class="flex flex-row border-2 border-black border-solid w-24 mt-4 justify-between items-center">
+              <button class="text-2xl">-</button>
+              <input
+                type="number"
+                min="1"
+                max="9999"
+                class="text-black text-center quantity-input"
+                value="1" />
+              <button class="text-2xl">+</button>
+            </div>
             <div>
               <a href=""
                 ><button
@@ -84,7 +91,6 @@
                 </button></a
               >
             </div>
-              
           </div>
         </div>
       </section>
@@ -93,7 +99,7 @@
       <!-- <footer class="footer p-10 bg-base-200 text-base-content"> -->
       <div class="p-10 text-base-content lg:flex justify-around">
         <aside>
-          <h1 class="font-bold text-2xl">Prisca's</h1>
+          <img src="./images/Prisca_s_Bakery__7_-removebg-preview.png" alt="Prisc's bakery logo" class="">
           <p class="w-64 mt-4">
             Discover the friendly atmosphere of Prisca's Bakery & Confectionary
             in Bukoto. Make orders on a place where simplicity and diversity
