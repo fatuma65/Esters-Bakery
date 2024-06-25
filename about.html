@@ -12,14 +12,12 @@
       rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
 
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /> -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./favicon-32x32.ico" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
 
     <script
       src="https://kit.fontawesome.com/02f0423708.js"
@@ -29,44 +27,41 @@
   </head>
   <body>
     <header
-      class="flex flex-row justify-around bg-[#F2EDE8] items-center text-black fixed w-full top-0 left-0 z-10">
-      <!-- class="flex flex-row justify-around items-center bg-pink-500 text-white"> -->
-      <!-- <h3 class="font-bold text-2xl">Prisca's</h3> -->
-      <img 
-        src="./images/Prisca_s_Bakery__7_-removebg-preview.png"
-        alt="Prisc's bakery logo"
-        class="" />
+    class="flex flex-row lg:justify-around items-center text-white fixed bg-[#F2EDE8] w-full top-0 left-0 z-10">
+    <img
+      src="./images/Prisca_s_Bakery__7_-removebg-preview.png"
+      alt="Prisc's bakery logo"
+      class="" />
 
-      <nav>
-        <ul class="flex p-2 justify-center items-center text-base">
-          <li class="m-2"><a href="./index.html">Home</a></li>
-          <li class="m-2"><a href="./menu.html">Menu</a></li>
-          <li class="m-2"><a href="#">About Us</a></li>
-          <li class="m-2"><a href="./contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div class="flex items-center">
-        <a href="./menu.html"
-          ><button class="rounded-md text-white p-2 text-base m-2 btn1">
-            Order Now
-          </button></a
-        >
-        <!-- <i class="bx bxs-shopping-bag text-white text-3xl"></i> -->
-        <i class="bx bxs-cart text-black text-3xl"></i>
-      </div>
-    </header>
+    <nav class="mx-auto">
+      <ul class="lg:flex p-2 lg:flex-row flex-col justify-center items-center text-base text-black menuitems  text-white" >
+        <a href="./index.html"><li class="m-2">Home</li></a>
+        <a href="./menu.html"><li class="m-2">Menu</li></a>
+        <a href="./about.html"><li class="m-2">About Us</li></a>
+        <a href="./contact.html"><li class="m-2">Contact Us</li></a>
+      </ul>
+    </nav>
+    <div class="flex items-center" id="main-div">
+      <a href="#"
+        ><button class="rounded-md p-2 text-base m-2 btn1">
+          Order Now
+        </button></a
+      >
+      <i class="bx bxs-cart text-black text-3xl"></i>
+    </div>
+    <i class="bx bx-menu text-6xl text-black" id="bx-menu" onclick="handleClick()" >
+    </i>
+  </header>
     <main class="bg-[#E6A79B]">
       <section class="">
-      <!-- <section class="section6 h-screen"> -->
         <div class="lg:flex justify-center mt-14">
-          <div class="lg:w-1/2 ml-8 h-96">
-            <!-- <img src="./images/images2.jpg" class="w-full h-full" /> -->
-             <h1 class="text-6xl font-semibold text-white main-h1 mb-8">About <br> Prisca's Bakery</h1>
+          <div class="lg:w-1/2 lg:ml-8 lg:h-96 w-full">
+             <h1 class="lg:text-6xl text-7xl font-semibold text-white main-h1 mb-8">About <br> Prisca's Bakery</h1>
           </div>
 
-          <div class="w-1/2 p-6 m-4 flex flex-col text-white">
-            <h1 class="text-2xl font-bold p-4">Welcome to our Bakery</h1>
-            <p class="p-4">
+          <div class="lg:w-1/2 p-6 m-4 flex flex-col text-white about-p">
+            <h1 class="text-2xl font-bold p-4 hidden1">Welcome to our Bakery</h1>
+            <p class="lg:p-4 p-2 lg:text-base text-xl hidden1 ">
               Welcome to Prisca's Bakery & Confectionary, a modern Ugandan-style
               bakery and confectionary that celebrates the flavors and
               traditions of the ugandan culture through food. We offer a variety
@@ -74,13 +69,13 @@
               support local vendors whenever possible by purchasing their
               products as well.
             </p>
-            <p class="p-4">
+            <p class="lg:p-4 p-2 lg:text-base text-xl hidden1 ">
               Excellent hospitality is what we strive for: from our ordering
               process, to the production of our baked goods, and their delivery,
               we are always focused on making our clients feel comfortable and
               well taken care of.
             </p>
-            <p class="p-4">
+            <p class="lg:p-4 p-2 lg:text-base text-xl hidden1 ">
               Born during a time of pandemic, Prisca's Bakery & Confectionary
               celebrates the experiences that make us human like sharing
               delicious snacks with our friends and family. We invite you to
@@ -88,60 +83,59 @@
               handmade menu options.
             </p>
           </div>
-          <!-- <img src="./images/bakery2.jpg" alt="" class="w-2/4 p-4" /> -->
         </div>
       </section>
     </main>
-    <footer class="bg-base-200">
-        <div class="p-10 text-base-content lg:flex justify-around">
-          <aside>
+    <footer class="bg-[#F2EDE8] footer1">
+        <div class="lg:p-10 p-4 text-base-content lg:flex lg:justify-between flex-col lg:flex-row">
+          <aside class="flex flex-col  mb-4 lg:mb-0">
             <img
               src="./images/Prisca_s_Bakery__7_-removebg-preview.png"
               alt="Prisc's bakery logo"
-              class="" />
+              class="footer-img" />
   
-            <p class="w-64 mt-4">
+            <p class="lg:w-64 w-full lg:text-base text-2xl mt-4 footer-p hidden1 ">
               Discover the friendly atmosphere of Prisca's Bakery & Confectionary
               in Bukoto. Make orders on a place where simplicity and diversity
               come together for an authentic experience.
             </p>
-            <p class="mt-4 flex items-center">
-              <input type="radio" name="radio-1" class="radio mr-2" checked />
-              <span>Know More About us </span>
+            <p class="mt-4 flex items-center lg:text-base text-xl">
+              <input type="radio" name="radio-1" class="radio mr-2" />
+              <a href="./about.html"><span>Know More About us </span></a>
             </p>
           </aside>
-          <div class="flex flex-col">
-            <h6 class="text-xl font-semibold">Quick Links</h6>
-            <ul>
-              <li class="mt-2">About Us</li>
-              <li class="mt-1">Contact Us</li>
-              <li class="mt-1">Our Menu</li>
+          <div class="flex flex-col mb-4 lg:mb-0 ">
+            <h6 class="lg:text-xl font-bold text-2xl">Quick Links</h6>
+            <ul class="lg:text-base text-xl">
+              <li class="mt-2"><a href="./about.html">About Us</li></a>
+              <li class="mt-1"><a href="./contact.html">Contact Us</li></a>
+              <li class="mt-1"><a href="./menu.html">Our Menu</li></a>
               <li class="mt-1">Catering</li>
             </ul>
           </div>
-          <div class="flex flex-col links">
-            <h6 class="text-xl font-semibold">Contact</h6>
-            <div class="mt-1 flex flex-row items-center">
+          <div class="flex flex-col  mb-4 lg:mb-0 links ">
+            <h6 class="lg:text-xl font-bold text-2xl contact">Contact</h6>
+            <div class="mt-1 flex flex-row items-center ">
               <i
                 class="bx bxs-location-plus m-2 text-3xl text-white bg-[#E6A79B] flex items-center justify-center"></i>
-              <p>
+              <p class="lg:text-base text-xl">
                 Bukoto UCB Zone Moyo close <br />
                 Kampala Uganda
               </p>
             </div>
-            <div class="mt-1 flex flex-row items-center">
+            <div class="mt-1 flex flex-row items-center lg:text-base text-2xl">
               <i
                 class="bx bx-envelope m-2 text-3xl text-white bg-[#E6A79B] flex items-center justify-center"></i>
-              <p>ester@gmail.com</p>
+              <p class="lg:text-base text-xl">Estherprisca16@gmail.com</p>
             </div>
             <div class="mt-1 flex flex-row items-center">
               <i
                 class="bx bxs-phone m-2 text-3xl text-white bg-[#E6A79B] flex items-center justify-center"></i>
-              <p>+256-762-266-803</p>
+              <p class="lg:text-base text-xl">+256-762-266-803</p>
             </div>
           </div>
-          <div class="flex flex-col fotters">
-            <h6 class="text-xl font-semibold">Social Links</h6>
+          <div class="flex flex-col items-center p-4 lg:p-0 fotters ">
+            <h6 class="lg:text-xl text-2xl font-bold">Social Links</h6>
             <div class="flex mt-2">
               <i
                 class="bx bxl-twitter text-3xl text-white bg-[#E6A79B] m-2 mx-auto flex items-center justify-center"></i>
@@ -150,15 +144,44 @@
               <i
                 class="bx bxl-youtube text-3xl text-white bg-[#E6A79B] m-2 flex items-center justify-center"></i>
             </div>
-          </div>
         </div>
+      </div>
         <div class="flex flex-col items-center">
-          <hr class="w-4/5 m-2 mx-auto bg-[#000]" />
-          <p class="flex items-center">
-            Made with <i class="bx bxs-heart text-center text-xl"></i> by Namale
+          <hr class="w-4/5  m-2 mx-auto bg-[#000] " />
+          <p class="flex items-center lg:text-base text-2xl justify-center">
+            Made with <i class="bx bxs-heart text-center lg:text-xl text-lg mx-auto"></i> by Namale
             Fatuma
           </p>
         </div>
       </footer>
+      <script>
+        // javascript for the humgurger menu
+        var menu = document.getElementById("bx-menu");
+        var nav = document.querySelector("nav");
+    
+        nav.style.maxHeight = "0px";
+    
+        function handleClick() {
+          if (nav.style.maxHeight == "0px") {
+            nav.style.maxHeight = "200px";
+            nav.style.display = "block";
+          } else {
+            nav.style.maxHeight = "0px";
+            nav.style.display = "none";
+          }
+        }
+              // javascript for text animation when scrolling
+      document.addEventListener('DOMContentLoaded', () => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if(entry.isIntersecting) {
+              entry.target.classList.add('visible')
+            }
+          })
+        });
+        const hiddenElements = document.querySelectorAll('.hidden1')
+        hiddenElements.forEach((ell) => observer.observe(ell))
+      })
+      </script>
   </body>
 </html>
