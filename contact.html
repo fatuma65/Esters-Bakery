@@ -31,19 +31,17 @@
   <body>
     <header
     class="flex flex-row lg:justify-around items-center text-white fixed bg-[#F2EDE8] w-full top-0 left-0 z-10">
-    <!-- class="flex flex-row justify-around items-center  text-white"> -->
-    <!-- <h3 class="font-bold text-2xl">Prisca's</h3> -->
     <img
       src="./images/Prisca_s_Bakery__7_-removebg-preview.png"
       alt="Prisc's bakery logo"
       class="" />
 
-    <nav id="contact-nav">
+    <nav class="menu-nav">
       <ul class="lg:flex p-2 lg:flex-row flex-col justify-center items-center text-base text-black menuitems  text-white" >
         <a href="./index.html"><li class="m-2">Home</li></a>
         <a href="./menu.html"><li class="m-2">Menu</li></a>
         <a href="./about.html"><li class="m-2">About Us</li></a>
-        <a href="#"><li class="m-2">Contact Us</li></a>
+        <a href="./contact.html"><li class="m-2">Contact Us</li></a>
       </ul>
     </nav>
     <div class="flex items-center" id="main-div">
@@ -52,7 +50,6 @@
           Order Now
         </button></a
       >
-      <!-- <i class="bx bxs-shopping-bag text-white text-3xl"></i> -->
       <i class="bx bxs-cart text-black text-3xl"></i>
     </div>
     <i class="bx bx-menu text-6xl text-black" id="bx-menu" onclick="handleClick()" >
@@ -83,50 +80,6 @@
           </div>
         </div>
       </section>
-      
-      <!-- <section class="relative">
-        <div
-          class="contact-section mt-14  h-auto lg:min-h-screen flex justify-center items-center relative">
-          class="contact-section mt-14 w-full h-96 flex justify-center items-center relative">
-          <div class="hero-overlay bg-opacity-70 absolute inset-0">
-            <div class="hero-content text-center text-neutral-content relative z-10"> -->
-              <!-- <div class=""> -->
-              <!-- <div class="max-md-auto">
-                <h1 class="text-7xl ml-48 text-white font-bold text-black">
-                  Contact Us
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex flex-col justify-center shadow-2xl lg:w-4/6 w-3/4 rounded-xl lg:mt-80 mt-96 absolute bg-[#fff]"> -->
-            <!-- <div class="">
-                
-            </div>
-            <form action="" class="flex flex-col p-6">
-              <label for="" class="lg:text-lg text-2xl p-2">Name</label>
-              <input
-                type="text"
-                class="border border-black border-solid lg:p-2 p-4 rounded-md" />
-              <label for="" class="lg:text-lg text-2xl p-2">Email</label>
-              <input
-                type="text"
-                class="border border-black border-solid lg:p-2 p-4 rounded-md" />
-              <label for="" class="lg:text-lg text-2xl p-2">Message</label>
-              <textarea
-                name=""
-                id=""
-                class="border border-black border-solid lg:p-4 p-8 rounded-md"
-                rows="5"></textarea>
-              <button
-                class="btn btn-primary mt-4 lg:text-lg text-2xl text-white bg-[#E6A79B] border-none hover:bg-[#c49991]"
-                id="submit">
-                Submit
-              </button>
-            </form>
-          </div>
-        </div>
-      </section> -->
     </main>
     <script>
       var submit = document.getElementById("submit");

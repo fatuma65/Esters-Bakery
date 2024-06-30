@@ -11,15 +11,12 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
-
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /> -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./favicon-32x32.ico" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
 
     <script
       src="https://kit.fontawesome.com/02f0423708.js"
@@ -30,14 +27,11 @@
   <body>
     <header
       class="flex flex-row lg:justify-around text-white fixed w-full top-0 left-0 z-10">
-      <!-- class="flex flex-row justify-around items-center bg-pink-500 text-white"> -->
-      <!-- <h3 class="font-bold text-2xl">Prisca's</h3> -->
       <img
         src="./images/Prisca_s_Bakery__7_-removebg-preview.png"
         alt="Prisca's bakery logo"
         class="" />
 
-      <!-- <div class="main-menu"> -->
         <nav>
           <ul
             class="flex lg:flex-row flex-col p-2 justify-center items-center text-base menuitems">
@@ -53,44 +47,25 @@
               Order Now
             </button></a
           >
-
-          <!-- <i class="bx bxs-shopping-bag text-white text-3xl"></i> -->
           <i class="bx bxs-cart text-white text-3xl" id="cart"></i>
         </div>
         
-      <!-- </div> -->
       <i class="bx bx-menu text-6xl" id="bx-menu" onclick="handleClick()">
       </i>
     </header>
     <main>
-      <!-- <section
-        class="section1 flex flex-col justify-center items-center w-full">
-        <h1 class="text-7xl text-pink-800 font-bold">
-          Prisca's Bakery & Confectionary
-        </h1>
-        <p class="font-semibold text-2xl">
-          Savor the sweet symphony of our freshly homebaked baked goods.
-        </p>
-        <div>
-          <button class="btn1 p-2 text-xl">Order Now</button>
-          <button class="btn btn-secondary text-xl">View Menu</button>
-        </div>
-      </section> -->
       <section class="relative">
         <div
           class="hero lg:min-h-screen h-screen  bg-cover bg-center hero1"
           style="
             background-image: url(./images/heather-barnes-WbZesfqwR-A-unsplash.jpg);
           ">
-          <!-- <div class="hero min-h-screen " style="background-image: url(./images/heather-barnes-WbZesfqwR-A-unsplash.jpg);"> -->
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content lg:text-center text-neutral-content">
             <div class="max-w-md bakery ">
-              <!-- <h1 class="text-7xl font-bold text-white "> -->
               <h1 class="text-7xl font-bold text-white hidden1">
                 Prisca's Bakery & Confectionary
               </h1>
-              <!-- <h1 class="mb-5 text-7xl font-bold">Prisca's Bakery & Confectionary</h1> -->
               <p class="mb-5 text-2xl lg:text-base text-white lg:text-nowrap hidden1">
                 Savor the sweet aroma of our freshly homebaked products.
               </p>
@@ -107,7 +82,6 @@
               >
             </div>
             </div>
-            <!--  -->
           </div>
         </div>
       </section>
@@ -167,12 +141,10 @@
           <div class="lg:w-1/2 p-4">
             <img src="./images/images2.jpg" class="w-full baker-img h-full" />
           </div>
-          <!-- <img src="./images/bakery2.jpg" alt="" class="w-2/4 p-4" /> -->
         </div>
       </section>
       <section
         class="section2 lg:h-screen flex justify-center items-center flex-col">
-        <!-- <div class="lg:flex items-center justify-around p-4 flex-row"> -->
         <h1 class="text-3xl font-bold text-center p-2 mb-12 bake">
           Our Bakery Products
         </h1>
@@ -184,7 +156,7 @@
               <img
                 src="./images/cinammon-rolls.jpg"
                 alt=""
-                class="mx-auto lg:w-64 m-2 rounded-md lg:h-60 h-96 w-full p-4" />
+                class="mx-auto  lg:m-0 m-2 rounded-md lg:h-60 h-96 w-full lg:p-2 p-4" />
               <h3 class="lg:text-xl text-3xl font-bold text-center mt-8 hidden1">Cinammon Rolls</h3>
               <hr class="m-2 w-1/2 mx-auto" />
               <p class="text-center">Price UGX 12000</p>
@@ -199,7 +171,7 @@
               <img
                 src="./images/Basic-Muffin-Recipe.jpg"
                 alt="" 
-                class="mx-auto lg:w-64 w-full p-2 m-2 rounded-md lg:h-60 h-96" />
+                class="mx-auto  w-full p-2 lg:m-0 m-2 rounded-md lg:h-60 h-96" />
               <h3 class="lg:text-xl text-3xl font-bold text-center mt-8 hidden1">Muffins</h3>
               <hr class="m-2 w-1/2 mx-auto" />
               <p class="text-center">Price UGX 3000</p>
@@ -214,7 +186,7 @@
               <img
                 src="./images/crossiants1.jpg"
                 alt=""
-                class="mx-auto lg:w-64 w-full m-2 rounded-md lg:h-60 h-96 p-2" />
+                class="mx-auto w-full lg:m-0 m-2 rounded-md lg:h-60 h-96 p-2" />
               <h3 class="lg:text-xl text-3xl font-bold text-center mt-8 hidden1">Crossiants</h3>
               <hr class="m-2 w-1/2 mx-auto" />
               <p class="text-center">Price UGX 8000</p>
@@ -230,7 +202,7 @@
               <img
                 src="./images/birthday-cakes.jpg"
                 alt=""
-                class="mx-auto lg:w-64 w-full p-2 m-2 rounded-md lg:h-60 h-96" />
+                class="mx-auto lg:m-0 w-full p-2 m-2 rounded-md lg:h-60 h-96" />
               <h3 class="lg:text-xl text-3xl font-bold text-center mt-8 hidden1">Birthday Cake</h3>
               <hr class="m-2 w-1/2 mx-auto" />
               <p class="text-center">Price UGX 150000</p>
@@ -270,7 +242,7 @@
       </section>
 
       <section class="section4">
-        <div class="lg:mt-24 flex relative lg:items-center flex-col lg:flex-row">
+        <div class="lg:mt-24  relative hero lg:min-h-screen">
           <video
             loop
             muted
@@ -280,67 +252,67 @@
             id="bg-video" class="hero">
             Your browser does not support the video tag.
           </video>
-          <div
-            class="lg:w-1/2 lg:h-80 opening lg:ml-16 lg:flex flex-col lg:items-center text-white">
-            <!-- class="flex flex-col w-1/3 justify-center p-4 m-8 ml-16 items-center text-white z-10"> -->
-            <h2 class="m-2 p-4 font-bold lg:text-xl text-3xl">Opening Hours</h2>
-            <div class="flex lg:w-80 w-full flex-col lg:ml-4">
-              <div class="flex justify-between m-2 lg:text-base text-xl">
-                <p>Working Days</p>
-                <p>08AM - 05PM</p>
-              </div>
-              <hr class="lg:w-80 mx-auto m-2 w-full" />
-            </div>
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content lg:text-center text-neutral-content">
+            <div class="opening lg:flex lg:items-center"> 
+            
+              <div
+                class="lg:h-80 lg:w-1/2  lg:flex flex-col lg:items-center text-white">
+                <h2 class="m-2 p-4 font-bold lg:text-xl text-3xl">Opening Hours</h2>
+                <div class="flex lg:w-80 w-full flex-col lg:ml-4">
+                  <div class="flex justify-between m-2 lg:text-base text-xl">
+                    <p>Working Days</p>
+                    <p>08AM - 05PM</p>
+                  </div>
+                  <hr class="lg:w-80 mx-auto m-2 w-full" />
+                </div>
 
-            <div class="flex lg:w-80 flex-col lg:ml-4 w-full">
-              <div class="flex justify-between m-2 lg:text-base text-xl">
-                <p>Saturday</p>
-                <p>10AM - 05PM</p>
-              </div>
-              <hr class="lg:w-80 mx-auto m-2 w-full" />
-            </div>
+                <div class="flex lg:w-80 flex-col lg:ml-4 w-full">
+                  <div class="flex justify-between m-2 lg:text-base text-xl text-white">
+                    <p>Saturday</p>
+                    <p>10AM - 05PM</p>
+                  </div>
+                  <hr class="lg:w-80 mx-auto m-2 w-full" />
+                </div>
 
-            <div class="flex lg:w-80 w-full flex-col lg:ml-4">
-              <div class="flex justify-between m-2 lg:text-base text-xl">
-                <p>Sunday</p>
-                <p>12AM - 05PM</p>
+                <div class="flex lg:w-80 w-full flex-col lg:ml-4">
+                  <div class="flex justify-between m-2 lg:text-base text-xl text-white">
+                    <p>Sunday</p>
+                    <p>12AM - 05PM</p>
+                  </div>
+                  <hr class="lg:w-80 w-full mx-auto m-2" />
+                </div>
               </div>
-              <hr class="lg:w-80 w-full mx-auto m-2" />
+              <div class="flex flex-col lg:m-8 lg:w-1/2 w-full text-white">
+                <h1 class="font-bold lg:text-2xl text-3xl m-2 get hidden1 text-white">Get in Touch</h1>
+                <p class="m-2 lg:text-base text-2xl lg:font-semibold text-white hidden1">
+                  Please feel free to contact us according to the opening times
+                  specified, For any inquires or specific orders, call us on the
+                  phone number below.
+                </p>
+                <form action="" class="flex flex-col">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="text-white m-2 p-4 lg:text-base text-2xl" />
+                  <input
+                    type="text"
+                    placeholder="Email"
+                    class="m-2 p-4 text-white lg:text-base text-2xl" />
+                  <textarea
+                    name=""
+                    id=""
+                    placeholder="Message"
+                    class="m-2 p-4 text-white lg:text-base text-2xl"
+                    rows="5"></textarea>
+                  <button
+                    class="lg:p-2 p-4 lg:text-base text-2xl bg-[#7A7A7A] hover:text-white m-2 font-semibold rounded-md border-none"
+                    id="send">
+                    SEND
+                  </button>
+                </form>
+              </div>
             </div>
-          </div>
-          <div class="flex flex-col lg:m-8 lg:w-1/2 w-full">
-            <h1 class="font-bold lg:text-2xl text-3xl m-2 text-white get hidden1">Get in Touch</h1>
-            <p class="m-2 lg:text-base text-2xl lg:font-semibold text-white hidden1">
-              Please feel free to contact us according to the opening times
-              specified, For any inquires or specific orders, call us on the
-              phone number below.
-            </p>
-            <!-- <div> -->
-            <form action="" class="flex flex-col">
-              <!-- <label for="">Name</label> -->
-              <input
-                type="text"
-                placeholder="Name"
-                class="text-white m-2 p-4 lg:text-base text-2xl" />
-              <!-- <label for="">Email</label> -->
-              <input
-                type="text"
-                placeholder="Email"
-                class="m-2 p-4 text-white lg:text-base text-2xl" />
-              <!-- <label for="">Message</label> -->
-              <textarea
-                name=""
-                id=""
-                placeholder="Message"
-                class="m-2 p-4 text-white lg:text-base text-2xl"
-                rows="5"></textarea>
-              <button
-                class="lg:p-2 p-4 lg:text-base text-2xl bg-[#7A7A7A] hover:text-white m-2 font-semibold rounded-md border-none"
-                id="send">
-                SEND
-              </button>
-            </form>
-            <!-- </div> -->
           </div>
         </div>
       </section>
@@ -348,7 +320,6 @@
 
     
     <footer class="bg-[#F2EDE8]">
-    <!-- <footer class="bg-base-200"> -->
       <div class="lg:p-10 p-4 text-base-content lg:flex lg:justify-between flex-col lg:flex-row">
         <aside class="flex flex-col  mb-4 lg:mb-0">
           <img
@@ -367,7 +338,6 @@
           </p>
         </aside>
         <div class="flex flex-col mb-4 lg:mb-0 ">
-        <!-- <div class="flex flex-col "> -->
           <h6 class="lg:text-xl font-bold text-2xl quick">Quick Links</h6>
           <ul class="lg:text-base text-xl">
             <li class="mt-2"><a href="./about.html">About Us</li></a>
@@ -377,7 +347,6 @@
           </ul>
         </div>
         <div class="flex flex-col  mb-4 lg:mb-0 links ">
-        <!-- <div class="flex flex-col links lg:mt-4"> -->
           <h6 class="lg:text-xl font-bold text-2xl contact">Contact</h6>
           <div class="mt-1 flex flex-row items-center ">
             <i
@@ -399,7 +368,6 @@
           </div>
         </div>
         <div class="flex flex-col items-center p-4 lg:p-0 fotters ">
-        <!-- <div class="flex flex-col fotters justify-center items-center lg:mb-40"> -->
           <h6 class="lg:text-xl text-2xl font-bold">Social Links</h6>
           <div class="flex mt-2">
             <i
