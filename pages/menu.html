@@ -47,13 +47,12 @@
             Order Now
           </button></a
         >
-        <i class="bx bxs-cart text-black text-3xl"></i>
+        <div><a href="./cart.html"><i class="bx bxs-cart text-black text-3xl"><sup style="color: black;" id="count">0</sup></i></a></div>
       </div>
-      <i class="bx bx-menu text-6xl text-black" id="bx-menu" onclick="handleClick()" >
-      </i>
+      <i class="bx bx-menu text-4xl" id="bx-menu" onclick="handleClick()">
     </header>
     <main>
-      <section class="section-menu">
+      <section class="section-menu" style="margin: 50px 0;">
         <h1 class="text-3xl font-bold p-4 text-center lg:mt-14">Our Menu</h1>
         <div class="w-full">
           <div class="lg:flex justify-center">
@@ -69,7 +68,7 @@
             <p class="text-center">Price UGX 12000</p>
             <div class="flex justify-around items-center">
               <button
-                class="lg:p-2 p-4 rounded-lg mt-4 text-white btn2 hover:bg-none hover:outline-2 font-semibold">
+                class="lg:p-2 p-4 rounded-lg mt-4 text-white btn2 hover:bg-none hover:outline-2 font-semibold add-to-cart">
                 Add to Cart
               </button>
               <a href="../pages/cinamon.html"
@@ -92,7 +91,7 @@
               <p class="text-center">Price UGX 3000</p>
               <div class="flex justify-around items-center">
                 <button
-                  class="lg:p-2 p-4 rounded-md mt-4 text-white btn2 hover:bg-none hover:outline-2 font-semibold">
+                  class="lg:p-2 p-4 rounded-md mt-4 text-white btn2 hover:bg-none hover:outline-2 font-semibold add-to-cart">
                   Add to Cart
                 </button>
                 <a href="../pages/muffins.html"
@@ -160,7 +159,7 @@
               <hr class="m-2 w-1/2 mx-auto" />
               <p class="text-center">Price UGX 6000</p>
               <div class="flex justify-around items-center">
-                <button class="lg:p-2 p-4 rounded-md lg:mt-4 text-white btn2 m-2 font-semibold">
+                <button class="lg:p-2 p-4 rounded-md lg:mt-4 text-white btn2 m-2 font-semibold add-to-cart">
                   Add to Cart
                 </button>
                 <a href="../pages/samosa.html"
@@ -180,7 +179,7 @@
               <hr class="m-2 w-1/2 mx-auto" />
               <p class="text-center">Price UGX 8000</p>
               <div class="flex justify-around items-center">
-                <button class="lg:p-2 p-4 rounded-md lg:mt-4 text-white btn2 m-2 font-semibold">
+                <button class="lg:p-2 p-4 rounded-md lg:mt-4 text-white btn2 m-2 font-semibold add-to-cart">
                   Add to Cart
                 </button>
                 <a href="../pages/rock.html"
@@ -200,7 +199,7 @@
               <hr class="m-2 w-1/2 mx-auto" />
               <p class="text-center">Price UGX 2000</p>
               <div class="flex justify-around items-center">
-                <button class="lg:p-2 p-4 rounded-md lg:mt-4 text-white btn2 m-2 font-semibold">
+                <button class="lg:p-2 p-4 rounded-md lg:mt-4 text-white btn2 m-2 font-semibold add-to-cart">
                   Add to Cart
                 </button>
                 <a href="../pages/daddies.html"
@@ -220,7 +219,7 @@
               <hr class="m-2 w-1/2 mx-auto" />
               <p class="text-center">Price UGX 8000</p>
               <div class="flex justify-around items-center">
-                <button class="lg:p-2 p-4 lg:mt-4 rounded-md text-white btn2 m-2 font-semibold">
+                <button class="lg:p-2 p-4 lg:mt-4 rounded-md text-white btn2 m-2 font-semibold add-to-cart">
                   Add to Cart
                 </button>
                 <a href="../pages/milk.html"
@@ -386,22 +385,6 @@
           </p>
         </div>
       </footer>
-    <script>
-    // javascript for the humgurger menu
-    var menu = document.getElementById("bx-menu");
-    var nav = document.querySelector("nav");
-
-    nav.style.maxHeight = "0px";
-
-    function handleClick() {
-      if (nav.style.maxHeight == "0px") {
-        nav.style.maxHeight = "200px";
-        nav.style.display = "block";
-      } else {
-        nav.style.maxHeight = "0px";
-        nav.style.display = "none";
-      }
-    }
-  </script>
+    <script src="../script.js"></script>
   </body>
 </html>

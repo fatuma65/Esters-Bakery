@@ -138,8 +138,9 @@ textarea {
 @media screen and (min-width: 250px) and (max-width: 630px) {
   header {
     height: 100px;
-    justify-content: space-between;
+    justify-content: space-between !important;
     padding: 20px;
+    align-items: center;
   }
   #contact-nav,
   .menu-nav ul {
@@ -219,12 +220,13 @@ textarea {
     text-align: center;
   }
   .slide1 button {
-    padding: 20px;
-    font-size: 22px;
+    padding: 10px;
+    font-size: 16px;
     border-radius: 16px;
   }
   .bx-menu {
     display: block;
+    margin-right: 30px;
   }
   header img {
     width: 90px;
@@ -241,17 +243,19 @@ textarea {
     display: none;
   }
   .card2 {
-    height: 100vh;
+    height: fit-content !important;
   }
   .section6 {
-    height: 100vh;
-    margin-top: 200px;
+    height: fit-content !important;
   }
   .section6 p {
-    font-size: 26px;
+    font-size: 20px;
   }
   .section6 h1 {
     text-align: center;
+  }
+  .attractive {
+    white-space: nowrap;
   }
   .about-p p {
     text-align: left;
@@ -282,7 +286,7 @@ textarea {
     text-align: left;
   }
   .section3 {
-    height: 100vh;
+    height: fit-content !important;
   }
   .section-menu {
     margin-top: 140px;
@@ -297,8 +301,5 @@ textarea {
   .button1 {
     display: flex;
     justify-content: center;
-  }
-  .btn2 {
-    margin: 4px;
   }
 }
